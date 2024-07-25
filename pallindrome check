@@ -1,0 +1,21 @@
+public class Practicetwo {
+    public static void main(String[] args){
+    
+        int n=121;
+        int temp=n;
+
+        int rem=0;
+        int revnum=0;
+
+        for(n=121;n!=0;n=n/10){
+            rem=n%10;
+            revnum=revnum*10+rem;
+        }
+        System.out.println(revnum);
+        if(temp==revnum){
+            System.out.println("pallindrome");
+        }else{
+            System.err.println("not pallindrome");
+        }
+    }
+}
