@@ -1,0 +1,32 @@
+public class Practicetwo {
+    public static void main(String[] args){
+    
+        int a=65;
+        for(int i=1;i<=4;i++){
+            
+            int n=a-60;
+            int b=a+8;
+            int m=n+8;
+            int p=n+9;
+           // System.out.println((char)(a));
+            if(p==16 || p==17){
+               // System.out.println((char)(a)+n+(char)(b)+p);
+
+                System.out.print((char)(a));
+                System.out.print(n);
+                System.out.print((char)(b));
+                System.out.print(p);
+            }else{
+                //System.out.println((char)(a)+n+(char)(b)+m);
+
+                System.out.print((char)(a));
+                System.out.print(n);
+                System.out.print((char)(b));
+                System.out.print(m);
+            }
+            
+            a++;
+            System.out.println("");
+        }
+    }
+}
