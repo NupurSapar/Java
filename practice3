@@ -1,0 +1,28 @@
+class Solution {
+    public boolean isPalindrome(int x) {
+        if (x < 0) return false; // Negative numbers are not palindromes
+        
+        int temp = x;
+        int rem = 0;
+        int revnum = 0;
+        
+        while (temp != 0) {
+            rem = temp % 10;
+            revnum = revnum * 10 + rem;
+            temp = temp / 10;
+        }
+        
+        return x == revnum;
+    }
+
+    public static void main(String[] args) {
+        Solution solution = new Solution();
+        int number = 121;
+        
+        if (solution.isPalindrome(number)) {
+            System.out.println(number + " is a palindrome");
+        } else {
+            System.out.println(number + " is not a palindrome");
+        }
+    }
+}
